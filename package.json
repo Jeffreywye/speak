@@ -1,11 +1,21 @@
 {
-  "name": "speak-nodejs-tests-placeholder",
-  "description": "Simple Travis-CI check for JSHint (Code Linting)",
-  "version": "0.0.1",
-  "devDependencies": {
-    "jshint": "^2.6.0"
+  "name": "speak Petiton Web App",
+  "description": "A web app that uses vows and travis-ci.org for continuous integration",
+  "version": "0.0.0",
+  "homepage": "https://travis-ci.org/CSE442-SPEAK/speak",
+  "main": "./react-backend/client/src/Main.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/CSE442-SPEAK/speak.git"
   },
   "scripts": {
-    "test": "./node_modules/jshint/bin/jshint sample_test.js"
+    "test": "vows --spec"
+  },
+  "engines": {
+    "node": ">= 0.4"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vows": "0.6.x"
   }
 }
